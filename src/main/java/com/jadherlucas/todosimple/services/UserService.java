@@ -40,6 +40,7 @@ public class UserService {
         return this.userRepository.save(newObj);
     }
 
+    @Transactional
     public void deletar(Long id){
         buscarPeloId(id);
         try {
